@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashionista Home page
+    </title>
+    <link rel="stylesheet"href="styleindex.css">
+<style>
+    
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2&family=Dancing+Script&family=Libre+Baskerville:wght@700&family=Mochiy+Pop+One&family=Mochiy+Pop+P+One&family=Playfair+Display:ital,wght@1,500&family=Sawarabi+Gothic&display=swap');
+* {box-sizing: border-box;}
+
+body { 
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+  overflow: hidden;
+  background-color:bisque;
+  padding: 20px 10px;
+  
+}
+
+.header a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px; 
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+.header a.logo {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.header a:hover {
+  background-color: rgb(59, 22, 4);
+  color: white;
+
+}
+
+.header a.active {
+  background-color: rgb(51, 32, 22);
+  color: white;
+}
+
+.header-right {
+  float: right;
+}
+
+.bg{
+    position: absolute;
+    width:100%;
+    height: 100%;
+    z-index: -1;
+}
+body{
+
+background-size: cover;
+    font-family:"Sawarabi Gothic",sans-serif ;
+}
+main form{
+    margin-top:207px;
+}
+
+button a{
+    text-decoration: none;
+    color: black;
+}
+footer{
+    height:12vh;
+     background-color: 	bisque	; 
+     color:whitesmoke;
+     font-family: 'Baloo Bhaina 2', cursive;
+     position: relative;
+     top: 600px;
+     
+ }
+ .cwh{
+    position: relative;
+top: 16px;
+}
+ .flex-all-center{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+   position:relative;
+   top:-34px;
+   color:black;
+ }
+
+
+ .container1{
+    display: grid;
+grid-template-columns: auto auto;
+background-color: 		bisque;
+grid-template-rows: 222px;
+  
+margin: 5px 0px 11px 0px;
+}
+  .subitem h1{
+    font-size: 76px;
+    text-align: center;
+  }
+  .subitem1 img{
+    width: 100%;
+height: 100%;
+  }
+  .btncon button{
+    width: 167px;
+    height: 56px;
+    background-color: initial;
+    color: black;
+    position: relative;
+bottom: 299px;
+border:2px solid rgb(220, 198, 171);
+
+  }
+
+
+#i1 h1{
+font-size: 88px;
+text-align: center;
+color: rgb(113, 54, 26);
+padding-top: 60px;
+}
+#i1 h4{
+    font-size: 25px;
+text-align: center;
+color: rgb(15, 11, 11);
+}
+  .btncon{
+      align-items: center;
+  }
+
+@media only screen and (max-width:600px){
+    .header a {
+        float: none;
+        display: block;
+        text-align: left;
+      }
+      
+      .header-right {
+        float: none;
+      }
+.maincontainer{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+.item img{
+    width: 50%;
+    height: 75%;
+    padding: 9% 0px 0px 34%;
+}
+
+#i1{
+    text-align: center;
+
+    position: relative;
+    top: 22%;
+}
+.item h1{
+    color: brown;
+    font-weight: bolder;
+    letter-spacing: 8px;
+}
+.btncon{
+display: flex;
+justify-content: center;
+}
+.btncon button{
+    width: 133px;
+color: black;
+background-color: 	#00CED1;
+height: 40px;
+border-style: dashed;
+border-radius: 11px;
+}
+}
+
+
+</style>
+</head>
+<body>
+<img src="womencolbc1.jpg"class="bg">
+   
+<div class="header">
+    
+    
+    <a href="#default" class="logo">FASHIONISTA</a>
+    <div class="header-right">
+      <a class="active" href="index.html">HOME</a>
+      <a href="login2.php">LOGIN</a>
+      <a href="login.php">CART </a>
+
+
+    </div>
+  </div>
+  
+        <main>
+           <div class="maincontainer">
+               <div class="item"id="i1">
+                   <h1></h1>
+                <br>
+                <h4> <h4>
+                    <div class="btncon" >
+                        <button ><a href="phpwomencollection.php">WOMEN COLLECTION</a></button><button><A href="phpmancollection.php">MEN COLLECTION</A></button>
+                    </div>       
+               </div>
+               <div class="item"></div>
+           </div>
+           
+</main>
+<footer>
+    <div class="cwh">
+        <img src="brown logo.jpeg"width="50px"height="50px">FASIONISTA</div>    
+   <div class="flex-all-center">
+
+    <p> Copyright &copy;kashafAbdullah.com</p>
+
+    </footer>
+<SCRIPT>
+    
+</SCRIPT>
+</body>
+</html>

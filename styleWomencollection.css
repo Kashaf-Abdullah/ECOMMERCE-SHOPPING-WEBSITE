@@ -1,0 +1,327 @@
+ 
+.header {
+    overflow: hidden;
+    background-color:bisque;
+    padding: 20px 10px;
+   
+    
+  }
+  
+  .header a {
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px; 
+    line-height: 25px;
+    border-radius: 4px;
+  }
+  
+  .header a.logo {
+    font-size: 25px;
+    font-weight: bold;
+  }
+  
+  .header a:hover {
+    background-color: rgb(181, 137, 114);
+    color: black;
+  }
+  
+  .header a.active {
+    background-color:rgb(82, 52, 37);
+    color: white;
+  }
+  
+  .header-right {
+    float: right;
+  }
+  
+.maincontainer{
+    display: grid;
+    grid-template-columns: auto auto auto auto ;
+    background-color:	#FFF0F5 ;
+
+}
+.maincontainer2{
+background-color:	#FFE4E1;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+
+}    .maincontainer3{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+background-color: 	#FFE4E1;
+}
+.maincontainer4{
+    display: grid;
+grid-template-columns: auto auto;
+background-color: #FFC0CB;
+justify-content: space-around;
+padding: 34px 0px 0px 0px;
+width: 100%;
+}
+
+.maincontainer5{
+    display: grid;
+grid-template-columns: auto auto;
+background-color: #FFF0F5;
+justify-content: space-around;
+padding: 34px 0px 0px 0px;
+width: 100%;
+}
+
+.cart{
+   color:#4c1e48;
+   background-color: #ba6e9d;
+}
+.cart #shirtshow1{
+   display:flex;
+
+
+}
+.cart #i1{
+   display:flex;
+
+
+}
+
+/* new code */
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2&family=Dancing+Script&family=Libre+Baskerville:wght@700&family=Mochiy+Pop+One&family=Mochiy+Pop+P+One&family=Playfair+Display:ital,wght@1,500&family=Sawarabi+Gothic&display=swap');
+*{
+margin: 0;
+padding:0;
+/* box-sizing: border-box; */
+}
+body{
+background-color:  	#F0FFF0;
+color:black;
+font-family:"Sawarabi Gothic",sans-serif ;
+}
+
+
+.container1{
+display: grid;
+grid-template-columns: auto auto;
+background-color: goldenrod;
+grid-template-rows: 222px;
+
+margin: 5px 0px 11px 0px;
+}
+.subitem h1{
+font-size: 76px;
+text-align: center;
+}
+.subitem1 img{
+width: 100%;
+height: 100%;
+}
+
+.nameofbrand{
+color:brown;
+position: relative;
+left:39%;
+}
+/* //footer */
+footer{
+height:15vh;
+ background-color: bisque; 
+ color:white;
+ font-family: 'Baloo Bhaina 2', cursive;
+ position: relative;
+ top: 24px;
+}
+.cwh{
+position: relative;
+top: 16px;
+}
+.flex-all-center{
+display:flex;
+justify-content: center;
+align-items: center;
+position:relative;
+top:-19px;
+color:black;
+}
+
+#cb1{
+    position: relative;
+    left: 192px;
+}
+#cb2{
+    position: relative;
+    left: 192px;
+}
+
+#cb3{
+    position: relative;
+    left: 192px;
+}
+
+#cb4{
+    position: relative;
+    left: 192px;
+}
+
+#cb5{
+    position: relative;
+    left: 192px;
+}
+
+#cb6{
+    position: relative;
+    left: 192px;
+}
+
+#cb7{
+    position: relative;
+    left: 192px;
+}
+
+#cb8{
+    position: relative;
+    left: 192px;
+}
+
+#cb9{
+    position: relative;
+    left: 192px;
+}
+
+#cb10{
+    position: relative;
+    left: 192px;
+}
+
+#cb11{
+    position: relative;
+    left: 192px;
+}
+
+#cb12{
+    position: relative;
+    left: 192px;
+}
+
+#cb13{
+    position: relative;
+    left: 192px;
+}
+
+#cb14{
+    position: relative;
+    left: 192px;
+}
+
+#cb15{
+    position: relative;
+    left: 192px;
+}
+
+#cb16{
+    position: relative;
+    left: 192px;
+}
+
+
+.main_image  img{
+    width:100%;
+}
+@media only screen and (max-width:800px){
+li{
+    color: black;
+padding: 0px 31px 2px 11px;
+text-decoration: none;
+   }
+   .nameofbrand{
+       position: relative;
+       left:0%;
+   }
+   footer{
+height:10vh;
+
+}
+.maincontainer{
+    display: grid;
+    grid-template-columns: auto auto ;
+    background-color:	#FFC0CB ;
+
+}
+
+.maincontainer2{
+    display: grid;
+    grid-template-columns: auto auto ;
+    background-color:	#FFC0CB ;
+
+}
+
+.maincontainer3{
+    display: grid;
+    grid-template-columns: auto auto ;
+    background-color:	#FFC0CB ;
+
+}
+
+.maincontainer4{
+    display: grid;
+    grid-template-columns: auto auto ;
+    background-color:	#FFC0CB ;
+
+}
+
+.maincontainer5{
+    display: grid;
+    grid-template-columns: auto auto ;
+    background-color:#FFC0CB;
+
+}
+}
+@media only screen and (max-width:500px){
+li{
+    color: black;
+padding: 0px 31px 2px 11px;
+text-decoration: none;
+   }
+   .nameofbrand{
+       position: relative;
+       left:0%;
+   }
+   footer{
+height:10vh;
+
+}
+.maincontainer{
+    display: grid;
+    grid-template-columns: auto  ;
+    background-color:	#FFC0CB ;
+
+}
+
+.maincontainer2{
+    display: grid;
+    grid-template-columns: auto  ;
+    background-color:	#FFC0CB ;
+
+}
+
+.maincontainer3{
+    display: grid;
+    grid-template-columns: auto ;
+    background-color:	#FFC0CB ;
+
+}
+
+.maincontainer4{
+    display: grid;
+    grid-template-columns: auto  ;
+    background-color:	#FFC0CB ;
+
+}
+
+.maincontainer5{
+    display: grid;
+    grid-template-columns: auto auto ;
+    background-color:#FFC0CB;
+
+}
+}

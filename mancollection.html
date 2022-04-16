@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet"href="mancollectionstyle.css">
+</head>
+<style>
+    .maincontainer{
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+    }
+    .item img{
+        width: 308px;
+height: 396px;
+
+    }
+  .container{
+    display: grid;
+grid-template-columns: auto auto;
+background-color: goldenrod;
+grid-template-rows: 165px;
+  }
+  .subitem h1{
+    font-size: 76px;
+  }
+  .subitem img{
+    width: 100%;
+height: 100%;
+  }
+  .maincontainer2{
+      display:grid;
+      grid-template-columns: auto auto auto auto;
+
+  }
+  .maincontainer3{
+      display:grid;
+      grid-template-columns: auto auto auto auto;
+
+  }
+  .item2 img{
+        width: 308px;
+height: 396px;
+
+    }
+</style>
+<body>
+   <header>
+  <video   width="1340px"height="500px"loop>
+      <source src="video.mp4"type="video/mp4" >
+
+  </video>
+</header>
+    <main>
+
+        <form action="phpmancollection.php"method="post">   
+            <div class="maincontainer">
+                <div class="item">
+        <div class="i1">
+            <img id="itemimage"src="w1.jpg"width="250px"height="250px">
+        </div>
+        <input type="text" name="mcp1" id="mcp1"value="550">
+        
+        <div class="itemdetail">
+            <input type="button"value="addtocart"onclick="myFunction();this.onclick=null">
+        
+        <!-- <button id="btn1"onclick="myFunction()">Add toCart</button> -->
+        
+            <div class="cartitem">
+                <input type=button onclick="decrement(this)">-</input>
+                <input type="text"id="mc1"value=0 name="mc1">
+                <input type="button" onclick="increment(this)">+</input>
+
+            </div>
+        </div>
+                    
+                </div>
+                
+               <div class="item">
+               <div class="i2">
+            <img id="itemimage2"src="w2.jpg"width="250px"height="250px">
+        </div>
+        <input type="text" name="mcp2" id="mcp2"value="250">
+        
+        <div class="itemdetail">
+            <input type="button"value="addtocart"onclick="myFunction2();this.onclick=null">
+        <!-- <button id="btn2"onclick="myFunction2()">Add toCart</button> -->
+       
+        <div class="cartitem">
+            <input type=button onclick="decrement2(this)">-</input>
+            <input type="text"id="mc2"value=0 name="mc2">
+            <input type="button" onclick="increment2(this)">+</input>
+
+        </div>
+        </div>
+               </div>
+            
+              <div class="item">
+              <div class="i3">
+            <img id="itemimage3"src="w3.jpg"width="250px"height="250px">
+        </div>
+        <input type="text" name="mcp3" id="mcp3"value="1050">
+        
+        <div class="itemdetail">
+        
+         <input type="button"value="addtocart"onclick="myFunction3();this.onclick=null">
+       
+         <div class="cartitem">
+            <input type=button onclick="decrement3(this)">-</input>
+            <input type="text"id="mc3"value=0 name="mc3">
+            <input type="button" onclick="increment3(this)">+</input>
+
+        </div>     
+        
+                  
+              </div>
+              </div>
+            
+            
+        
+              <div class="item">
+        <div class="i4">
+            <img id="itemimage4"src="w4.jpg"width="250px"height="250px">
+        </div>
+        <input type="text" name="mcp4" id="mcp4"value="550">
+        
+        <div class="itemdetail">
+        
+            <input type="button"value="addtocart"onclick="myFunction4();this.onclick=null">
+        
+            <div class="cartitem">
+                <input type=button onclick="decrement4(this)">-</input>
+                <input type="text"id="mc4"value=0 name="mc4">
+                <input type="button" onclick="increment4(this)">+</input>
+
+            </div>
+        </div>
+              </div>
+                
+            </div>
+            
+            <div class="maincontainer2">
+                <div class="item2">
+        <div class="i5">
+            <img id="itemimage5"src="w1.jpg"width="250px"height="250px">
+        </div>
+        <input type="text" name="mcp5" id="mcp5"value="550">
+        
+        <div class="itemdetail">
+            <input type="button"value="addtocart"onclick="myFunction5();this.onclick=null">
+        
+        <!-- <button id="btn1"onclick="myFunction()">Add toCart</button> -->
+        
+            <div class="cartitem">
+                <input type=button onclick="decrement5(this)">-</input>
+                <input type="text"id="mc5"value=0 name="mc5">
+                <input type="button" onclick="increment5(this)">+</input>
+
+            </div>
+        </div>
+                    
+                </div>
+                
+               <div class="item2">
+               <div class="i6">
+            <img id="itemimage6"src="w2.jpg"width="250px"height="250px">
+        </div>
+        <input type="text" name="mcp6" id="mcp6"value="250">
+        
+        <div class="itemdetail">
+            <input type="button"value="addtocart"onclick="myFunction6();this.onclick=null">
+        <!-- <button id="btn2"onclick="myFunction2()">Add toCart</button> -->
+       
+        <div class="cartitem">
+            <input type=button onclick="decrement6(this)">-</input>
+            <input type="text"id="mc6"value=0 name="mc6">
+            <input type="button" onclick="increment6(this)">+</input>
+
+        </div>
+        </div>
+               </div>
+            
+              <div class="item2">
+              <div class="i7">
+            <img id="itemimage7"src="w3.jpg"width="250px"height="250px">
+        </div>
+        <input type="text" name="mcp7" id="mcp7"value="1050">
+        
+        <div class="itemdetail">
+        
+         <input type="button"value="addtocart"onclick="myFunction7();this.onclick=null">
+       
+         <div class="cartitem">
+            <input type=button onclick="decrement7(this)">-</input>
+            <input type="text"id="mc7"value=0 name="mc7">
+            <input type="button" onclick="increment7(this)">+</input>
+
+        </div>     
+        
+                  
+              </div>
+              </div>
+            
+            
+        
+              <div class="item2">
+        <div class="i8">
+            <img id="itemimage8"src="w4.jpg"width="250px"height="250px">
+        </div>
+        <input type="text" name="mcp8" id="mcp8"value="550">
+        
+        <div class="itemdetail">
+        
+            <input type="button"value="addtocart"onclick="myFunction8();this.onclick=null">
+        
+            <div class="cartitem">
+                <input type=button onclick="decrement8(this)">-</input>
+                <input type="text"id="mc8"value=0 name="mc8">
+                <input type="button" onclick="increment8(this)">+</input>
+
+            </div>
+        </div>
+              </div>
+                
+            </div>
+
+<div class="maincontainer3">
+    <div class="item3">
+<div class="i9">
+<img id="itemimage9"src="w1.jpg"width="250px"height="250px">
+</div>
+<input type="text" name="mcp9" id="mcp9"value="550">
+
+<div class="itemdetail">
+<input type="button"value="addtocart"onclick="myFunction9();this.onclick=null">
+
+<!-- <button id="btn1"onclick="myFunction()">Add toCart</button> -->
+
+<div class="cartitem">
+    <input type=button onclick="decrement9(this)">-</input>
+    <input type="text"id="mc9"value=0 name="mc9">
+    <input type="button" onclick="increment9(this)">+</input>
+
+</div>
+</div>
+        
+    </div>
+    
+   <div class="item3">
+   <div class="i10">
+<img id="itemimage10"src="w2.jpg"width="250px"height="250px">
+</div>
+<input type="text" name="mcp10" id="mcp10"value="250">
+
+<div class="itemdetail">
+<input type="button"value="addtocart"onclick="myFunction10();this.onclick=null">
+<!-- <button id="btn2"onclick="myFunction2()">Add toCart</button> -->
+
+<div class="cartitem">
+<input type=button onclick="decrement10(this)">-</input>
+<input type="text"id="mc10"value=0 name="mc10">
+<input type="button" onclick="increment10(this)">+</input>
+
+</div>
+</div>
+   </div>
+
+  <div class="item3">
+  <div class="i11">
+<img id="itemimage11"src="w3.jpg"width="250px"height="250px">
+</div>
+<input type="text" name="mcp11" id="mcp11"value="1050">
+
+<div class="itemdetail">
+
+<input type="button"value="addtocart"onclick="myFunction11();this.onclick=null">
+
+<div class="cartitem">
+<input type=button onclick="decrement11(this)">-</input>
+<input type="text"id="mc11"value=0 name="mc11">
+<input type="button" onclick="increment11(this)">+</input>
+
+</div>     
+
+      
+  </div>
+  </div>
+
+
+
+  <div class="item3">
+<div class="i12">
+<img id="itemimage8"src="w4.jpg"width="250px"height="250px">
+</div>
+<input type="text" name="mcp12" id="mcp12"value="550">
+
+<div class="itemdetail">
+
+<input type="button"value="addtocart"onclick="myFunction12();this.onclick=null">
+
+<div class="cartitem">
+    <input type=button onclick="decrement12(this)">-</input>
+    <input type="text"id="mc12"value=0 name="mc12">
+    <input type="button" onclick="increment12(this)">+</input>
+
+</div>
+</div>
+  </div>
+    
+</div>
+
+            <div class="cart">
+                <div id="shirtshow1"><div id="i1"></div></div>
+                <div id="shirtshow2"><div id="i2"></div></div>
+
+                <div id="shirtshow3"><div id="i3"></div></div>
+
+                <div id="shirtshow4"><div id="i4"></div></div>
+
+                <div id="shirtshow5"><div id="i5"></div></div>
+                <div id="shirtshow6"><div id="i6"></div></div>
+
+                <div id="shirtshow7"><div id="i7"></div></div>
+
+                <div id="shirtshow8"><div id="i8"></div></div>
+                <div id="shirtshow9"><div id="i9"></div></div>
+                <div id="shirtshow10"><div id="i10"></div></div>
+
+                <div id="shirtshow11"><div id="i11"></div></div>
+
+                <div id="shirtshow12"><div id="i12"></div></div>
+                <div id="finalamt"><input type="text" id="total"name="total"></input></div>
+
+                </div>
+           
+                <button name="btnmc"id="btnmc"onclick="totalamt()">CONFIRM</button>
+           
+              </form>
+    </main>
+    <script>
+  var total1=0;
+var total2=0;
+var total3=0;
+var total4=0;
+var total5=0;
+var total6=0;var total7=0;
+var total8=0;
+var total9=0;var total10=0;
+var total11=0;
+var total12=0;
+  
+  
+  
+  function increment(obj){
+        var a=document.getElementById('mc1').value;
+        a++;
+document.getElementById('mc1').value=a;
+// if(a==10){
+//     obj.disabled=true;
+
+// }    
+}
+
+    function decrement(obj){
+        var a=document.getElementById('mc1').value;
+        a--;
+document.getElementById('mc1').value=a;
+    
+// if(a==0){
+//     obj.disabled=true;
+// }
+}
+        const myFunction=()=>{
+  
+  const s1=document.getElementById('mc1').value;
+const p1=document.getElementById('mcp1').value;
+  //display
+  var shirtshow1=document.getElementById('shirtshow1');
+  // var x=document.createElement("img");
+  // x.setAttribute("src","m1.jpg");
+  // x.setAttribute("width", "200");
+  // x.setAttribute("height", "200");
+  // x.setAttribute("alt", "The Pulpit Rock");
+
+ 
+total1=s1*p1;
+    
+shirtshow1.innerHTML=`<hr>shirt quantity: ${s1}<br>
+      price: ${p1} ...
+      Total ${total1} `;
+//     console.log(`Customer order ${kilo} kilo potaoes`)
+//shirtshow1.appendChild(x);
+}
+
+// function myFunction(){
+//     var image2=document.getElementById('imageshow2');
+    
+//     var x=document.createElement("img");
+//     x.setAttribute("src","m2.jpg");
+//     x.setAttribute("width", "200");
+//     x.setAttribute("height", "200");
+//     x.setAttribute("alt", "The Pulpit Rock");
+  
+
+// image2.appendChild(x);
+    
+
+
+// }
+
+function increment2(obj){
+        var a=document.getElementById('mc2').value;
+        a++;
+document.getElementById('mc2').value=a;
+
+}
+
+    function decrement2(obj){
+        var a=document.getElementById('mc2').value;
+        a--;
+document.getElementById('mc2').value=a;
+  
+}
+        const myFunction2=()=>{
+  
+  const s1=document.getElementById('mc2').value;
+const p1=document.getElementById('mcp2').value;
+  //display
+  var shirtshow2=document.getElementById('shirtshow2');
+  
+ 
+total2=s1*p1;
+    
+shirtshow2.innerHTML=`<hr>shirt quantity: ${s1}<br>
+      price: ${p1} ...
+      Total ${total2} `;
+}
+
+function increment3(obj){
+        var a=document.getElementById('mc3').value;
+        a++;
+document.getElementById('mc3').value=a;
+
+}
+
+    function decrement3(obj){
+        var a=document.getElementById('mc3').value;
+        a--;
+document.getElementById('mc3').value=a;
+  
+}
+        const myFunction3=()=>{
+  
+  const s1=document.getElementById('mc3').value;
+const p1=document.getElementById('mcp3').value;
+  //display
+  var shirtshow3=document.getElementById('shirtshow3');
+  
+ 
+total3=s1*p1;
+    
+shirtshow3.innerHTML=`<hr>shirt quantity: ${s1}<br>
+      price: ${p1} ...
+      Total ${total3} `;
+}
+
+function increment4(obj){
+        var a=document.getElementById('mc4').value;
+        a++;
+document.getElementById('mc4').value=a;
+
+}
+
+    function decrement4(obj){
+        var a=document.getElementById('mc4').value;
+        a--;
+document.getElementById('mc4').value=a;
+  
+}
+        const myFunction4=()=>{
+  
+  const s1=document.getElementById('mc4').value;
+const p1=document.getElementById('mcp4').value;
+  //display
+  var shirtshow4=document.getElementById('shirtshow4');
+  
+ 
+total4=s1*p1;
+    
+shirtshow4.innerHTML=`<hr>shirt quantity: ${s1}<br>
+      price: ${p1} ...
+      Total ${total4} `;
+}
+
+function increment5(obj){
+        var a=document.getElementById('mc5').value;
+        a++;
+document.getElementById('mc5').value=a;
+
+}
+
+    function decrement5(obj){
+        var a=document.getElementById('mc5').value;
+        a--;
+document.getElementById('mc5').value=a;
+  
+}
+        const myFunction5=()=>{
+  
+  const s1=document.getElementById('mc5').value;
+const p1=document.getElementById('mcp5').value;
+  //display
+  var shirtshow5=document.getElementById('shirtshow5');
+  
+ 
+total5=s1*p1;
+    
+shirtshow5.innerHTML=`<hr>shirt quantity: ${s1}<br>
+      price: ${p1} ...
+      Total ${total5} `;
+}
+
+
+function increment6(obj){
+        var a=document.getElementById('mc6').value;
+        a++;
+document.getElementById('mc6').value=a;
+
+}
+
+    function decrement6(obj){
+        var a=document.getElementById('mc6').value;
+        a--;
+document.getElementById('mc6').value=a;
+  
+}
+        const myFunction6=()=>{
+  
+  const s1=document.getElementById('mc6').value;
+const p1=document.getElementById('mcp6').value;
+  //display
+  var shirtshow6=document.getElementById('shirtshow6');
+  
+ 
+total6=s1*p1;
+    
+shirtshow6.innerHTML=`<hr>shirt quantity: ${s1}<br>
+      price: ${p1} ...
+      Total ${total6} `;
+}
+
+function increment7(obj){
+        var a=document.getElementById('mc7').value;
+        a++;
+document.getElementById('mc7').value=a;
+
+}
+
+    function decrement7(obj){
+        var a=document.getElementById('mc7').value;
+        a--;
+document.getElementById('mc7').value=a;
+  
+}
+        const myFunction7=()=>{
+  
+  const s1=document.getElementById('mc7').value;
+const p1=document.getElementById('mcp7').value;
+  //display
+  var shirtshow7=document.getElementById('shirtshow7');
+  
+ 
+total7=s1*p1;
+    
+shirtshow7.innerHTML=`<hr>shirt quantity: ${s1}<br>
+      price: ${p1} ...
+      Total ${total7} `;
+}
+
+function increment8(obj){
+        var a=document.getElementById('mc8').value;
+        a++;
+document.getElementById('mc8').value=a;
+
+}
+
+    function decrement8(obj){
+        var a=document.getElementById('mc8').value;
+        a--;
+document.getElementById('mc8').value=a;
+  
+}
+        const myFunction8=()=>{
+  
+  const s1=document.getElementById('mc8').value;
+const p1=document.getElementById('mcp8').value;
+  //display
+  var shirtshow8=document.getElementById('shirtshow8');
+  
+ 
+total8=s1*p1;
+    
+shirtshow8.innerHTML=`<hr>shirt quantity: ${s1}<br>
+      price: ${p1} ...
+      Total ${total8} `;
+}
+
+
+function increment9(obj){
+        var a=document.getElementById('mc9').value;
+        a++;
+document.getElementById('mc9').value=a;
+
+}
+
+    function decrement8(obj){
+        var a=document.getElementById('mc9').value;
+        a--;
+document.getElementById('mc9').value=a;
+  
+}
+        const myFunction9=()=>{
+  
+  const s1=document.getElementById('mc9').value;
+const p1=document.getElementById('mcp9').value;
+  //display
+  var shirtshow9=document.getElementById('shirtshow9');
+  
+ 
+total9=s1*p1;
+    
+shirtshow9.innerHTML=`<hr>shirt quantity: ${s1}<br>
+      price: ${p1} ...
+      Total ${total9} `;
+}
+
+
+function increment10(obj){
+        var a=document.getElementById('mc10').value;
+        a++;
+document.getElementById('mc10').value=a;
+
+}
+
+    function decrement8(obj){
+        var a=document.getElementById('mc10').value;
+        a--;
+document.getElementById('mc10').value=a;
+  
+}
+        const myFunction10=()=>{
+  
+  const s1=document.getElementById('mc10').value;
+const p1=document.getElementById('mcp10').value;
+  //display
+  var shirtshow10=document.getElementById('shirtshow10');
+  
+ 
+total10=s1*p1;
+    
+shirtshow10.innerHTML=`<hr>shirt quantity: ${s1}<br>
+      price: ${p1} ...
+      Total ${total10} `;
+}
+
+
+function increment11(obj){
+        var a=document.getElementById('mc11').value;
+        a++;
+document.getElementById('mc11').value=a;
+
+}
+
+    function decrement11(obj){
+        var a=document.getElementById('mc11').value;
+        a--;
+document.getElementById('mc11').value=a;
+  
+}
+        const myFunction11=()=>{
+  
+  const s1=document.getElementById('mc11').value;
+const p1=document.getElementById('mcp11').value;
+  //display
+  var shirtshow11=document.getElementById('shirtshow11');
+  
+ 
+total11=s1*p1;
+    
+shirtshow11.innerHTML=`<hr>shirt quantity: ${s1}<br>
+      price: ${p1} ...
+      Total ${total11} `;
+}
+
+function increment12(obj){
+        var a=document.getElementById('mc12').value;
+        a++;
+document.getElementById('mc12').value=a;
+
+}
+
+    function decrement12(obj){
+        var a=document.getElementById('mc12').value;
+        a--;
+document.getElementById('mc12').value=a;
+  
+}
+        const myFunction12=()=>{
+  
+  const s1=document.getElementById('mc12').value;
+const p1=document.getElementById('mcp12').value;
+  //display
+  var shirtshow12=document.getElementById('shirtshow12');
+  
+ 
+total12=s1*p1;
+    
+shirtshow12.innerHTML=`<hr>shirt quantity: ${s1}<br>
+      price: ${p1} ...
+      Total ${total12} `;
+}
+function totalamt(){
+    
+    var t=0;
+var t=total1+total2+total3+total4+total5+total6+total7+total8+total9+total10+total11+total12;
+console.log('t');
+alert(t);
+document.getElementById('total').value=t;
+}
+
+
+
+    </script>
+</body>
+</html>
